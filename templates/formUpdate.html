@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<form class="xx mx-auto" action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{f.as_p}}
+    <input type="submit" value="Update" required>
+</form>
+<style scoped>
+    .xx {
+        background-color: rgb(30, 30, 31) !important;
+        color: white;
+        width: 500px !important;
+        height: 100% !important;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+</style>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
